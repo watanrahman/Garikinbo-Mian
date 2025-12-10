@@ -1,0 +1,90 @@
+*
+{
+    font-family: monospace!important;
+}
+    body {
+      overflow-x: hidden;
+      background-color: #f8f9fa;
+    }
+
+    /* Sidebar styles */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 250px;
+      background: #212529;
+      color: white;
+      transition: all 0.3s ease;
+      z-index: 1040;
+    }
+
+    #sidebar.collapsed {
+      width: 70px;
+    }
+
+    #sidebar .brand {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #sidebar ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    #sidebar .nav-link {
+      color: #adb5bd;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      transition: 0.2s;
+    }
+
+    #sidebar .nav-link i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    #sidebar .nav-link:hover {
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    #sidebar.collapsed .nav-link span {
+      display: none;
+    }
+
+    #sidebar.collapsed .brand span {
+      display: none;
+    }
+
+    #sidebar.collapsed .nav-link i {
+      margin-right: 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Main content */
+    #main-content {
+      margin-left: 250px;
+      transition: all 0.3s ease;
+      padding: 20px;
+    }
+
+    #main-content.expanded {
+      margin-left: 70px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+    }
+
+    .navbar {
+      z-index: 1050;
+    }
